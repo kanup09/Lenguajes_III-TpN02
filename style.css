@@ -1,0 +1,35 @@
+
+/* Limitamos la altura del carrusel para que sea consistente */
+.carousel-item {
+    height: 500px; /* Puedes ajustar esta altura (400px, 600px, etc.) */
+    background-color: #000; /* Fondo negro por si la imagen es muy angosta */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    /* La propiedad clave: recorta la imagen para llenar el contenedor sin deformar */
+    object-fit: cover; 
+    /* Centra la imagen para que no se corte solo de un lado */
+    object-position: center; 
+}
+/* Gradiente para el footer */
+footer {
+    background: linear-gradient(45deg, #212529, #343a40);
+    border-top: 3px solid #007bff;
+}
+
+/* Efecto hover en las tarjetas para que sea interactivo */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Tipografía más moderna */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
